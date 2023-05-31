@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Generated adventure
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Marvelous Generated Adventure</h1>
+    <div id="messages"></div>
+    <form id="message-form">
+        <input type="text" id="input-message" autocomplete="off">
+        <button type="submit">Send</button>
+    </form>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}
